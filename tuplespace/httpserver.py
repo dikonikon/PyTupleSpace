@@ -22,6 +22,11 @@ urls = (
 )
 app = web.application(urls, globals(), True)
 
+'''class index:
+    def GET(self):
+        web.seeother('/static/index.html')
+'''
+
 class openrequest:
 
     def __init__(self):
@@ -129,7 +134,7 @@ class examplerequest:
     def GET(self):
         self._log.info('received example request')
         # web.header('Content-Type', 'application/json')
-        rdata = (
+        random_data = (
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                "Donec non egestas nisl. Donec quis mauris non sem hendrerit feugiat.",
                "Nulla tempus lacus sed sapien porttitor feugiat. Quisque accumsan viverra sapien.",
@@ -143,6 +148,7 @@ class examplerequest:
                " ac turpis egestas. Curabitur lobortis tincidunt neque a condimentum. Nam augue urna, ",
                "auctor non bibendum eu, ultrices tristique dolor. Suspendisse ut hendrerit libero. Curabitur",
                " lacinia lacus in justo blandit in tincidunt dolor commodo. Morbi pretium semper est eu congue.")
+        rdata = { 'data': random_data }
         stringified_data = json.dumps(rdata)
         self._log.info("response body is: %s" % stringified_data)
         return stringified_data
