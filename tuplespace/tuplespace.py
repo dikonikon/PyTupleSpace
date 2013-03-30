@@ -165,8 +165,7 @@ class ServerProxy(object):
         '''
         r = Resource(self.serverBaseURI + '/' + 'check', HTTPLib2Transport())
         p = pack(tuple)
-        data = {}
-        data['tuple'] = p
+        data = {'tuple': p}
         stringified_data = json.dumps(data)
         result = r.post(payload=stringified_data,headers={'Content-Type': 'application/json', 'Authorization': self.id, \
                                            'Accepts': 'application/json'})
