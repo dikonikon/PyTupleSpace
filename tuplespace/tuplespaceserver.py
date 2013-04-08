@@ -3,6 +3,7 @@ __author__ = 'dickon'
 import logging
 import threading
 import marshal
+import pymongo
 
 none_value = marshal.dumps(None)
 
@@ -59,6 +60,10 @@ class MongoDBTupleSpaceServer(TupleSpaceServer):
     TODO: This is the next target to implement. Since the packed form of the tuples can easily be
     represented as a JSON string it seems there may be potential to benefit from MongoDBs scalable
     storage and query facilities for JS objects.
+    1. Need to think about the tuple representation though - is there benefit in explicitly representing
+    the types of the elements of the tuple
+    2. Need to think about the sharding key for Mongo - aiming to get the most of the ability of Mongo to
+    scale horizontally using shards - but how does the tuple representation shard effectively?
     '''
     pass
 
