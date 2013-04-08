@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40b95048-7f53-424d-9530-7f7d8001dbd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tuplespaceserver.py" afterPath="$PROJECT_DIR$/tuplespaceserver.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="40b95048-7f53-424d-9530-7f7d8001dbd3" name="Default" comment="" />
     <ignored path="tuplespace.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/a.py" changelist="40b95048-7f53-424d-9530-7f7d8001dbd3" time="1364632268703" ignored="false" />
