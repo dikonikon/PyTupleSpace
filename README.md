@@ -22,6 +22,6 @@ Simple working test implementation of the tuplespace exists that supports a rudi
 
 Current work focuses on:
 
-* richer representation of tuples including explicit annotation of the types of elements
+* richer representation of tuples including explicit annotation of the types of elements: current representation is as a list of byte arrays, which are assumed to incorporate type information. This has the benefit of being simple both to implement and to create language bindings for, but it has significant drawbacks. For example semantically equivalent tuples from different bindings are not equivalent, and it presents fewer opportunities for sharding (see next bullet)
 * implementation using Mongodb thinking about approach to sharding
 
