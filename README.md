@@ -3,6 +3,8 @@ PyTupleSpace
 
 A cloud ready TupleSpace using Python.
 
+see https://github.com/dikonikon/WebTupleSpace: now being developed in Scala
+
 PyTupleSpace aims to provide a place for dynamic and loosely coupled interaction and exchange of objects in a distributed system such as the internet.
 
 It implements a tuple space where the interface is defined and implemented using web services rather than being
